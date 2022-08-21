@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Paytone+One&family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-image: radial-gradient(
+          circle farthest-corner at 10% 20%,
+          rgba(252, 253, 137, 1) 0%,
+          rgba(72, 243, 215, 1) 90%
+        );
+      }
+      #all:hover {
+        font-size: larger;
+        font-weight: bold;
+      }
+
+      #time {
+        font-family: "Caveat", cursive;
+      }
+
+      .lead {
+        font-family: "Abril Fatface", cursive;
+      }
+      .text1 {
+        font-family: "Paytone One", sans-serif;
+        display: inline-block;
+        color: rgb(219, 219, 8);
+        margin-left: 5px;
+      }
+
+      .ic1 {
+        margin-bottom: 15px;
+      }
+
+      .navbar {
+        background-color: rgba(3, 22, 57, 0.968) !important;
+      }
+      .nav-link {
+        font-family: "Concert One", cursive;
+        font-size: 20px;
+        color: rgb(204, 98, 36);
+        transition: ease 0.25ms;
+      }
+      .nav-link:hover {
+        background-color: white;
+        color: black;
+        border-radius: 23px;
+        font-weight: 700;
+      }
+      .nav-link:active {
+        background-color: white;
+        color: black;
+      }
+      .jumbotron {
+        padding: 30px;
+        z-index: 5;
+        background-color: #1566b600;
+        transition: background-color 0.25s;
+      }
+
+      .j-element {
+        background-image: url(./ind2.jpg);
+        background-size: cover;
+        z-index: 1;
+      }
+
+      .jumbotron:hover {
+        background-color: #031b338a;
+        color: white;
+      }
+      #bt1 {
+        background-color: rgb(246, 168, 50);
+        color: black;
+        font-weight: 500;
+      }
+      #i1 {
+        color: rgb(224, 15, 15);
+      }
+      table {
+        color: black;
+      }
+      p {
+        color: rgb(15, 2, 156);
+      }
+      #line1 {
+        background-color: rgb(252, 245, 245);
+        height: 2.5px;
+      }
+      #sma,
+      #big {
+        border: none;
+        border-radius: 25px;
+        background-color: rgb(6, 81, 48);
+      }
+      #wet {
+        float: right;
+        width: 320px;
+        height: 240px;
+        margin-top: 20px;
+        margin-right: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 40px;
+      }
+      .temp {
+        display: inline-block;
+      }
+      .description {
+        text-transform: capitalize;
+        font-style: italic;
+      }
+      .weather {
+        margin-top: 0px;
+        margin-left: 25px;
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+      }
+      #weticon {
+        margin-left: 20px;
+      }
+      #kbt {
+        margin-left: 4px;
+        margin-bottom: 2px;
+      }
+      #fbt {
+        margin-bottom: 2px;
+      }
+    </style>
+    <title>India</title>
+    <link rel="icon" type="image/x-icon" href="./images/indiafav.png" />
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="./images/tictik2.png"
+          alt="timeall"
+          rel="icon"
+          type="image/x-icon"
+          class="ic1"
+        />
+        <h2 class="text1">Tic-Tik</h2>
+      </a>
+
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="./jhomeworld.html"
+            style="margin-right: 40px"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./jabout.html" style="margin-right: 40px"
+            >About</a
+          >
+        </li>
+
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+            style="margin-right: 30px"
+          >
+            Continents
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="./jprojasia.html">ASIA</a>
+            <a class="dropdown-item" href="./jprojeurope.html">EUROPE</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="container my-5">
+      <div class="j-element">
+        <div class="jumbotron">
+          <h1 class="display-4" style="height: 150px; display: inline-block">
+            <span id="all"
+              >Current time is:
+              <span id="time"></span>
+            </span>
+          </h1>
+
+          <div class="card" id="wet">
+            <div class="weather">
+              <div class="flex">
+                <h1 class="temp" id="far">51°C</h1>
+                <img src="" alt="" class="icon" id="weticon" />
+                <button class="btn btn-primary" id="ref">
+                  <i class="fa fa-refresh"></i>
+                </button>
+              </div>
+              <button class="btn btn-success" id="fbt">°F</button>
+              <button class="btn btn-success" id="kbt">°K</button>
+              <h2 class="city">Kolkata</h2>
+              <h3 class="description">Clouds</h3>
+            </div>
+          </div>
+
+          <p class="lead pt-4" style="font-size: 50px">
+            <span id="i1">
+              <ion-icon name="location-sharp"></ion-icon>
+            </span>
+            INDIA
+          </p>
+          <hr class="my-4 mt-1" id="line1" />
+
+          <button class="btn btn-primary btn-lg" id="sma" style="float: right">
+            12-hr Format
+          </button>
+          <button
+            class="btn btn-primary btn-lg mx-4"
+            id="big"
+            style="float: right"
+          >
+            24-hr Format
+          </button>
+          <button
+            class="btn btn-primary btn-lg"
+            style="vertical-align: top"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseExample"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+            id="bt1"
+          >
+            Know More
+          </button>
+
+          <div class="collapse mt-3" id="collapseExample">
+            <div
+              class="card card-body"
+              style="width: 500px; background-color: rgba(55, 240, 227, 0.841)"
+            >
+              <table>
+                <tr>
+                  <th style="border-bottom: thin solid black">Country:</th>
+                  <td style="border-bottom: thin solid black">India</td>
+                </tr>
+                <tr>
+                  <th style="border-bottom: thin solid black">Long Name:</th>
+                  <td style="border-bottom: thin solid black">
+                    Republic of India
+                  </td>
+                </tr>
+                <tr>
+                  <th style="border-bottom: thin solid black">
+                    Abbreviations:
+                  </th>
+                  <td style="border-bottom: thin solid black">IN , IND</td>
+                </tr>
+                <tr>
+                  <th style="border-bottom: thin solid black">Capital:</th>
+                  <td style="border-bottom: thin solid black">New Delhi</td>
+                </tr>
+                <tr>
+                  <th style="border-bottom: thin solid black">Time Zones:</th>
+                  <td style="border-bottom: thin solid black">1</td>
+                </tr>
+                <tr>
+                  <th style="border-bottom: thin solid black">
+                    Time Zones Name:
+                  </th>
+                  <td style="border-bottom: thin solid black">
+                    Indian Standard Time (IST)
+                  </td>
+                </tr>
+                <tr>
+                  <th>Dial Code:</th>
+                  <td>+91</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      cI = setInterval(() => {
+        let a;
+        let time;
+        let date;
+        let h1;
+        let m1;
+        let s1;
+        const options = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        a = new Date();
+        h1 = a.getHours();
+        m1 = a.getMinutes();
+        s1 = a.getSeconds();
+        if (h1 < 10 && m1 < 10 && s1 < 10) {
+          h1 = "0" + h1;
+          m1 = "0" + m1;
+          s1 = "0" + s1;
+        } else if (h1 < 10 && m1 < 10 && s1 > 9) {
+          h1 = "0" + h1;
+          m1 = "0" + m1;
+          s1 = s1;
+        } else if (h1 < 10 && m1 > 9 && s1 < 10) {
+          h1 = "0" + h1;
+          m1 = m1;
+          s1 = "0" + s1;
+        } else if (h1 > 9 && m1 < 10 && s1 < 10) {
+          h1 = h1;
+          m1 = "0" + m1;
+          s1 = "0" + s1;
+        } else if (h1 > 9 && m1 > 9 && s1 > 9) {
+          h1 = h1;
+          m1 = m1;
+          s1 = s1;
+        } else if (h1 > 9 && m1 > 9 && s1 < 10) {
+          h1 = h1;
+          m1 = m1;
+          s1 = "0" + s1;
+        } else if (h1 > 9 && m1 < 10 && s1 > 9) {
+          h1 = h1;
+          m1 = "0" + m1;
+          s1 = s1;
+        } else if (h1 < 10 && m1 > 9 && s1 > 9) {
+          h1 = "0" + h1;
+          m1 = m1;
+          s1 = s1;
+        }
+        date = a.toLocaleDateString(undefined, options);
+        time = h1 + ":" + m1 + ":" + s1;
+        document.getElementById("time").innerHTML = time + "<br>" + date;
+      }, 1000);
+      // var clockStatus = 1;
+      var bI;
+      function bighr() {
+        // setTimeout(smallhr,5000);
+        // if (clockStatus == 1) {
+        console.log("Heigala 24hr!!!!");
+
+        bI = setInterval(() => {
+          clearInterval(cI);
+          clearInterval(sI);
+          let a;
+          let time;
+          let date;
+          let h1;
+          let m1;
+          let s1;
+          const options = {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          };
+          a = new Date();
+          h1 = a.getHours();
+          m1 = a.getMinutes();
+          s1 = a.getSeconds();
+          if (h1 < 10 && m1 < 10 && s1 < 10) {
+            h1 = "0" + h1;
+            m1 = "0" + m1;
+            s1 = "0" + s1;
+          } else if (h1 < 10 && m1 < 10 && s1 > 9) {
+            h1 = "0" + h1;
+            m1 = "0" + m1;
+            s1 = s1;
+          } else if (h1 < 10 && m1 > 9 && s1 < 10) {
+            h1 = "0" + h1;
+            m1 = m1;
+            s1 = "0" + s1;
+          } else if (h1 > 9 && m1 < 10 && s1 < 10) {
+            h1 = h1;
+            m1 = "0" + m1;
+            s1 = "0" + s1;
+          } else if (h1 > 9 && m1 > 9 && s1 > 9) {
+            h1 = h1;
+            m1 = m1;
+            s1 = s1;
+          } else if (h1 > 9 && m1 > 9 && s1 < 10) {
+            h1 = h1;
+            m1 = m1;
+            s1 = "0" + s1;
+          } else if (h1 > 9 && m1 < 10 && s1 > 9) {
+            h1 = h1;
+            m1 = "0" + m1;
+            s1 = s1;
+          } else if (h1 < 10 && m1 > 9 && s1 > 9) {
+            h1 = "0" + h1;
+            m1 = m1;
+            s1 = s1;
+          }
+          date = a.toLocaleDateString(undefined, options);
+          time = h1 + ":" + m1 + ":" + s1;
+          document.getElementById("time").innerHTML = time + "<br>" + date;
+        }, 1000);
+      }
+
+      // }
+
+      big = document.getElementById("big");
+      // e.stopPropagation();
+      big.addEventListener("click", bighr);
+
+      var sI;
+      function smallhr() {
+        console.log("Heigala 12hr!!!!");
+        // setTimeout(bighr, 5000);
+        clearInterval(cI);
+        clearInterval(bI);
+        sI = setInterval(() => {
+          let a;
+          let time;
+          let date;
+          let h1;
+          let m1;
+          let s1;
+          let post;
+          const options = {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          };
+          a = new Date();
+          h1 = a.getHours();
+          m1 = a.getMinutes();
+          s1 = a.getSeconds();
+          post = " AM";
+          if (h1 < 10 && m1 < 10 && s1 < 10) {
+            h1 = "0" + h1;
+            m1 = "0" + m1;
+            s1 = "0" + s1;
+          } else if (h1 < 10 && m1 < 10 && s1 > 9) {
+            h1 = "0" + h1;
+            m1 = "0" + m1;
+            s1 = s1;
+          } else if (h1 < 10 && m1 > 9 && s1 < 10) {
+            h1 = "0" + h1;
+            m1 = m1;
+            s1 = "0" + s1;
+          } else if (h1 > 9 && m1 < 10 && s1 < 10) {
+            h1 = h1;
+            m1 = "0" + m1;
+            s1 = "0" + s1;
+          } else if (h1 > 9 && m1 > 9 && s1 > 9) {
+            h1 = h1;
+            m1 = m1;
+            s1 = s1;
+          } else if (h1 > 9 && m1 > 9 && s1 < 10) {
+            h1 = h1;
+            m1 = m1;
+            s1 = "0" + s1;
+          } else if (h1 > 9 && m1 < 10 && s1 > 9) {
+            h1 = h1;
+            m1 = "0" + m1;
+            s1 = s1;
+          } else if (h1 < 10 && m1 > 9 && s1 > 9) {
+            h1 = "0" + h1;
+            m1 = m1;
+            s1 = s1;
+          }
+          date = a.toLocaleDateString(undefined, options);
+          time = h1 + ":" + m1 + ":" + s1;
+          if (h1 < 12 && h1 > 9) {
+            h1 = h1;
+            time = h1 + ":" + m1 + ":" + s1 + post;
+          } else if (h1 < 12 && h1 < 9) {
+            // h1 = "0" + h1;
+            time = h1 + ":" + m1 + ":" + s1 + post;
+          } else if (h1 == 12) {
+            post = " PM";
+            time = h1 + ":" + m1 + ":" + s1 + post;
+          } else if (h1 > 12) {
+            h1 = h1 - 12;
+            post = " PM";
+            if (h1 < 12 && h1 > 9) {
+              h1 = h1;
+              time = h1 + ":" + m1 + ":" + s1 + post;
+            } else if (h1 < 12 && h1 < 9) {
+              h1 = "0" + h1;
+              time = h1 + ":" + m1 + ":" + s1 + post;
+            }
+          }
+          document.getElementById("time").innerHTML = time + "<br>" + date;
+        }, 1000);
+      }
+
+      sma = document.getElementById("sma");
+      // z.stopPropagation();
+      sma.addEventListener("click", smallhr);
+
+      var tempname;
+      let weather = {
+        apiKey: "3060599f9e6bd2cb1d007244ba381e68",
+        fetchWeather: function (city) {
+          console.log("Data fetched");
+          fetch(
+            "https://api.openweathermap.org/data/2.5/weather?q=" +
+              city +
+              "&units=metric&appid=" +
+              this.apiKey
+          )
+            .then((response) => response.json())
+            .then((data) => this.displayWeather(data));
+        },
+        displayWeather: function (data) {
+          console.log("Completed", data);
+          const { name } = data;
+          const { icon, description } = data.weather[0];
+          const { temp } = data.main;
+          tempname = temp;
+          // console.log(name, icon, description, temp)
+          document.querySelector(".icon").src =
+            "https://openweathermap.org/img/wn/" + icon + "@2x.png";
+          document.querySelector(".description").innerText = description;
+          document.querySelector(".temp").innerText = Math.floor(temp) + "°C";
+        },
+      };
+      weather.fetchWeather("Kolkata");
+
+      const ele1 = document.getElementById("ref");
+      ele1.addEventListener("click", function () {
+        weather.fetchWeather("Kolkata");
+      });
+
+      const ele2 = document.getElementById("fbt");
+      ele2.addEventListener("click", function () {
+        let fartemp = (tempname * 9) / 5 + 32;
+        // console.log(tempname)
+        document.querySelector(".temp").innerText = Math.floor(fartemp) + "°F";
+      });
+
+      const ele3 = document.getElementById("kbt");
+      ele3.addEventListener("click", function () {
+        let keltemp = tempname + 273.15;
+        // console.log(tempname)
+        document.querySelector(".temp").innerText = Math.floor(keltemp) + "°K";
+      });
+    </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

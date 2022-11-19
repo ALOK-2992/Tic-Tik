@@ -39,137 +39,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="style.css">
     <style>
-      body {
-        background-image: radial-gradient(
-          circle farthest-corner at 10% 20%,
-          rgba(252, 253, 137, 1) 0%,
-          rgba(72, 243, 215, 1) 90%
-        );
-      }
-      #all:hover {
-        font-size: larger;
-        font-weight: bold;
-      }
-
-      #time {
-        font-family: "Caveat", cursive;
-      }
-
-      .lead {
-        font-family: "Abril Fatface", cursive;
-      }
-      .text1 {
-        font-family: "Paytone One", sans-serif;
-        display: inline-block;
-        color: rgb(219, 219, 8);
-        margin-left: 5px;
-      }
-
-      .ic1 {
-        margin-bottom: 15px;
-      }
-
-      .navbar {
-        background-color: rgba(3, 22, 57, 0.968) !important;
-      }
-      .nav-link {
-        font-family: "Concert One", cursive;
-        font-size: 20px;
-        color: rgb(204, 98, 36);
-        transition: ease 0.25ms;
-      }
-      .nav-link:hover {
-        background-color: white;
-        color: black;
-        border-radius: 23px;
-        font-weight: 700;
-      }
-      .nav-link:active {
-        background-color: white;
-        color: black;
-      }
-      .jumbotron {
-        padding: 30px;
-        z-index: 5;
-        background-color: #1566b600;
-        transition: background-color 0.25s;
-      }
-
-      .j-element {
-        background-image: url(./images/ind2.jpg);
-        background-size: cover;
-        z-index: 1;
-      }
-
-      .jumbotron:hover {
-        background-color: #031b338a;
-        color: white;
-      }
-      #bt1 {
-        background-color: rgb(246, 168, 50);
-        color: black;
-        font-weight: 500;
-      }
-      #i1 {
-        color: rgb(224, 15, 15);
-      }
-      table {
-        color: black;
-      }
-      p {
-        color: rgb(15, 2, 156);
-      }
-      #line1 {
-        background-color: rgb(252, 245, 245);
-        height: 2.5px;
-      }
-      #sma,
-      #big {
-        border: none;
-        border-radius: 25px;
-        background-color: rgb(6, 81, 48);
-      }
-      #wet {
-        float: right;
-        width: 320px;
-        height: 240px;
-        margin-top: 20px;
-        margin-right: 10px;
-        background-color: black;
-        color: white;
-        border-radius: 40px;
-      }
-      .temp {
-        display: inline-block;
-      }
-      .description {
-        text-transform: capitalize;
-        font-style: italic;
-      }
-      .weather {
-        margin-top: 0px;
-        margin-left: 25px;
-      }
-      .flex {
-        display: flex;
-        align-items: center;
-      }
-      #weticon {
-        margin-left: 20px;
-      }
-      #kbt {
-        margin-left: 4px;
-        margin-bottom: 2px;
-      }
-      #fbt {
-        margin-bottom: 2px;
-      }
+      
     </style>
     <title>India</title>
     <link rel="icon" type="image/x-icon" href="./images/indiafav.png" />
   </head>
-  <>
     <nav class="navbar fixed-top navbar-light bg-light">
       <a class="navbar-brand" href="./index.html">
         <img
@@ -213,42 +89,106 @@
         </li>
       </ul>
     </nav>
+    <div class="outer-container">
+      <div class=" jumbotron j-element">
+        <div class="upper-container">
 
-    <div class="container my-5">
-      <div class="j-element">
-        <div class="jumbotron">
-          <h1 class="display-4" style="height: 150px; display: inline-block">
-            <span id="all"
-              >Current time is:
-              <span id="time"></span>
-            </span>
-          </h1>
-
-          <div class="card" id="wet">
-            <div class="weather">
-              <div class="flex">
+          <div class="left-container1">
+            <div class="up1-left-container"><h1 class="display-4" >
+              <span id="all"
+                >Current time is:
+                <span id="time"></span>
+              </span>
+            </h1></div>
+            <div class="bt1-left-container"><p class="lead pt-4" style="font-size: 50px">
+              <span id="i1">
+                <ion-icon name="location-sharp"></ion-icon>
+              </span>
+              INDIA
+            </p></div>
+          
+          </div>
+          <div class="right-container1">
+            <div class="card" id="wet">
+              <div class="weather">
+            
                 <h1 class="temp" id="far">51°C</h1>
                 <img src="" alt="" class="icon" id="weticon" />
                 <button class="btn btn-primary" id="ref">
                   <i class="fa fa-refresh"></i>
                 </button>
+                <div>
+                  <button class="btn btn-success" id="fbt">°F</button>
+                  <button class="btn btn-success" id="kbt">°K</button>
+                </div>
+                <h2 class="city">Kolkata</h2>
+                <h3 class="description">Clouds</h3>
               </div>
-              <button class="btn btn-success" id="fbt">°F</button>
-              <button class="btn btn-success" id="kbt">°K</button>
-              <h2 class="city">Kolkata</h2>
-              <h3 class="description">Clouds</h3>
             </div>
           </div>
+        </div>
+        <div class="bottom-container">
+          <div class="left-container2">
+            <button
+              class="btn btn-primary btn-lg"
+              style="vertical-align: top"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+              id="bt1"
+            >
+              Know More
+            </button>
 
-          <p class="lead pt-4" style="font-size: 50px">
-            <span id="i1">
-              <ion-icon name="location-sharp"></ion-icon>
-            </span>
-            INDIA
-          </p>
-          <hr class="my-4 mt-1" id="line1" />
-
-          <button class="btn btn-primary btn-lg" id="sma" style="float: right">
+            <div class="collapse mt-3" id="collapseExample">
+              <div
+                class="card card-body"
+                style="background-color: rgba(55, 240, 227, 0.841);"
+              >
+                <table>
+                  <tr>
+                    <th style="border-bottom: thin solid black">Country:</th>
+                    <td style="border-bottom: thin solid black">India</td>
+                  </tr>
+                  <tr>
+                    <th style="border-bottom: thin solid black">Long Name:</th>
+                    <td style="border-bottom: thin solid black">
+                      Republic of India
+                    </td>
+                  </tr>
+                  <tr>
+                    <th style="border-bottom: thin solid black">
+                      Abbreviations:
+                    </th>
+                    <td style="border-bottom: thin solid black">IN , IND</td>
+                  </tr>
+                  <tr>
+                    <th style="border-bottom: thin solid black">Capital:</th>
+                    <td style="border-bottom: thin solid black">New Delhi</td>
+                  </tr>
+                  <tr>
+                    <th style="border-bottom: thin solid black">Time Zones:</th>
+                    <td style="border-bottom: thin solid black">1</td>
+                  </tr>
+                  <tr>
+                    <th style="border-bottom: thin solid black">
+                      Time Zones Name:
+                    </th>
+                    <td style="border-bottom: thin solid black">
+                      Indian Standard Time (IST)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Dial Code:</th>
+                    <td>+91</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="right-container2"><button class="btn btn-primary btn-lg" id="sma" style="float: right">
             12-hr Format
           </button>
           <button
@@ -257,68 +197,12 @@
             style="float: right"
           >
             24-hr Format
-          </button>
-          <button
-            class="btn btn-primary btn-lg"
-            style="vertical-align: top"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseExample"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-            id="bt1"
-          >
-            Know More
-          </button>
-
-          <div class="collapse mt-3" id="collapseExample">
-            <div
-              class="card card-body"
-              style="width: 500px; background-color: rgba(55, 240, 227, 0.841)"
-            >
-              <table>
-                <tr>
-                  <th style="border-bottom: thin solid black">Country:</th>
-                  <td style="border-bottom: thin solid black">India</td>
-                </tr>
-                <tr>
-                  <th style="border-bottom: thin solid black">Long Name:</th>
-                  <td style="border-bottom: thin solid black">
-                    Republic of India
-                  </td>
-                </tr>
-                <tr>
-                  <th style="border-bottom: thin solid black">
-                    Abbreviations:
-                  </th>
-                  <td style="border-bottom: thin solid black">IN , IND</td>
-                </tr>
-                <tr>
-                  <th style="border-bottom: thin solid black">Capital:</th>
-                  <td style="border-bottom: thin solid black">New Delhi</td>
-                </tr>
-                <tr>
-                  <th style="border-bottom: thin solid black">Time Zones:</th>
-                  <td style="border-bottom: thin solid black">1</td>
-                </tr>
-                <tr>
-                  <th style="border-bottom: thin solid black">
-                    Time Zones Name:
-                  </th>
-                  <td style="border-bottom: thin solid black">
-                    Indian Standard Time (IST)
-                  </td>
-                </tr>
-                <tr>
-                  <th>Dial Code:</th>
-                  <td>+91</td>
-                </tr>
-              </table>
-            </div>
-          </div>
+          </button></div>
         </div>
       </div>
     </div>
+
+    
 
     <script>
       cI = setInterval(() => {

@@ -316,10 +316,16 @@
       var getTime = setInterval(() => {
         let a;
         a = new Date();
-        date = a.toLocaleString("en-US", { timeZone: "Asia/Thimphu" });
-        // console.log(date.slice(0, 9));
-        var reqdate = date.slice(0, 9);
-        var forMonth = date[0];
+        date = a.toLocaleString("en-US", { timeZone: "Asia/Kabul" });
+        // console.log(date);
+
+        let datestr = date + "";
+        datestr = datestr.substring(0, 10);
+        //getting the day
+        const d = new Date(date);
+        var month_no = a.getMonth();
+        datestr = d.toDateString();
+
         const monthNames = [
           "January",
           "February",
@@ -334,21 +340,20 @@
           "November",
           "December",
         ];
-        var reqMonth = monthNames[forMonth - 1]; //month name
-        var numMonth = date.slice(2, 4); // daynumber in month
-        var reqyear = date.slice(5, 9); //year
+        var reqMonth = monthNames[month_no];
+        var reqyear = a.getFullYear(); //year
 
-        function getDayName(reqdate, locale) {
-          var date1 = new Date(reqdate);
+        function getDayName(datestr, locale) {
+          var date1 = new Date(datestr);
           return date1.toLocaleDateString(locale, { weekday: "long" });
         }
-        var reqday = getDayName(reqdate, "en-US"); // day
-        // console.log(reqday);
+        var reqday = getDayName(datestr, "en-US"); // day
         time = a.toLocaleString("en-US", {
           timeZone: "Asia/Thimphu",
           timeStyle: "medium",
           hourCycle: "h24",
         });
+
         document.getElementById("time").innerHTML =
           time +
           "<br>" +
@@ -357,7 +362,7 @@
           " " +
           reqMonth +
           " " +
-          numMonth +
+          datestr.substring(8, 10) +
           "," +
           " " +
           reqyear;

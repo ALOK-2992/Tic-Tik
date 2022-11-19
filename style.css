@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
   }
   .j-element:hover .display-4{
     transform: scale(1.145);
-    color: white;
+    color: rgb(34, 182, 123);
   }
   #bt1 {
     background-color: rgb(246, 168, 50);
@@ -175,9 +175,9 @@ body::-webkit-scrollbar {
     display: flex;
     height: 45px;
 }
-.up1-left-container {
+/* .up1-left-container {
   background-color: blue;
-}
+} */
 @media screen and (max-width: 400px){
     .outer-container {
         display: flex;
